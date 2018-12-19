@@ -1,0 +1,65 @@
+<!-- INNER-BANNER -->
+<div class="inner-banner style-6">
+	<!--<img class="center-image" src="../../theme/img/inner/bg_6.jpg" alt="">-->
+	<div class="vertical-align">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-offset-2">
+		  			<ul class="banner-breadcrumb color-white clearfix">
+		  				<li>Golf South Africa</li>
+		  			</ul>
+		  			<h2 class="color-white">{{type}}s</h2>
+  				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- S_NEWS-ENTRY -->
+<div class="main-wraper padd-90">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<div class="second-title">
+
+				</div>
+			</div>
+		</div>
+		<div class="blog-grid row">
+			<div class="blog-grid-entry col-mob-12 col-xs-12 col-sm-6 col-md-4" *ngFor="let content of contents">
+				<div class="s_news-entry style-2">
+					<a *ngIf="content.imageUrl" routerLink="../{{type}}/{{content.seo?.alias}}"><img class="s_news-img img-responsive" [src]="content.imageUrl" alt=""></a>
+					<h4 class="s_news-title"><a routerLink="../{{type}}/{{content.seo?.alias}}">{{content.name}}</a></h4>
+					<div class="tour-info-line clearfix">
+						<div class="tour-info fl" *ngIf="content.createdOn">
+				  	 		<img src="../../theme/img/calendar_icon_grey.png" alt="">
+				  	 		<span class="font-style-2 color-dark-2">Published {{content.createdOn | date}}</span>
+				  	 	</div>
+						<div class="tour-info fl" *ngIf="content.author">
+				  	 		<img src="../../theme/img/people_icon_grey.png" alt="">
+				  	 		<span class="font-style-2 color-dark-2">By {{content.author}}</span>
+				  	 	</div>
+						<!--<div class="tour-info fl">
+				  	 		<img src="../../theme/img/comment_icon_grey.png" alt="">
+				  	 		<span class="font-style-2 color-dark-2">10 comments</span>
+				  	 	</div>-->
+					</div>
+					<div class="s_news-text color-grey-3" style="min-height:120px;">{{content.tagline}}</div>
+					<a routerLink="../{{type}}/{{content.seo?.alias}}" class="c-button small bg-dr-blue-2 hv-dr-blue-2-o"><span>view more</span></a>	  	 	
+				</div>				
+			</div>													
+		</div>
+		<!--<div class="c_pagination clearfix">
+			<a href="#" class="c-button b-40 bg-dr-blue-2 hv-dr-blue-2-o fl">prev page</a>
+			<a href="#" class="c-button b-40 bg-dr-blue-2 hv-dr-blue-2-o fr">next page</a>
+			<ul class="cp_content color-3">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">...</a></li>
+				<li><a href="#">10</a></li>
+			</ul>
+		</div>		-->
+	</div>
+</div> 

@@ -1,0 +1,77 @@
+<!-- INNER-BANNER -->
+ 
+<!--
+<div class="detail-wrapper">
+  <div class="main-wraper padd-40">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <form class="contact-form" #form="ngForm" (ngSubmit)="submitLoginForm(content)">
+            <div class="row">
+              <div class="text-center" *ngIf="status">
+                <h5 class="content-group"><small class="display-block">{{status}}</small></h5>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="input-style-1 type-2 color-2">
+                  <input type="text" required="required" placeholder="Enter your username" name="username" [(ngModel)]="content.username">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="input-style-1 type-2 color-2">
+                  <input type="password" required="required" placeholder="Enter your password" name="password" [(ngModel)]="content.password">
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <button type="submit" class="c-button bg-dr-blue-2 hv-dr-blue-2-o"><span>Login</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>-->
+
+
+
+
+<div class="container">
+	<div class="login-fullpage">                                                                            
+		<div class="row">
+        <div class="login-logo">
+          <img src="../../theme/img/login.jpg" style="display:block;" />
+        </div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="f-login-content">
+					<div class="f-login-header">
+						<div class="f-login-title color-dr-blue-2">Welcome back!</div>
+						<div class="f-login-desc color-grey">Please login to your account</div>
+					</div>
+
+          <div class="alert bg-5 text-center" *ngIf="status">
+              <span class="no-hz-padding">{{status}}</span>
+              <img class="confirm-img" src="../../theme/img/down_icon.png" alt="">
+          </div>
+          
+					<form class="f-login-form" #form="ngForm" (ngSubmit)="submitLoginForm(content)">
+						<div class="input-style-1 b-50 type-2 color-5">
+						<input type="text" required="required" placeholder="Enter your username" name="username" [(ngModel)]="content.username">
+						</div>
+						<div class="input-style-1 b-50 type-2 color-5">
+							<input type="password" required="required" placeholder="Enter your password" name="password" [(ngModel)]="content.password">
+						</div>
+						 <button type="submit" class="c-button bg-dr-blue-2 hv-dr-blue-2-o" style="width:100%;"><span>LOG INTO YOUR ACCOUNT</span></button>
+             <div class="clearfix"></div>
+            <br><br>
+            <!--<p class="color-grey">Forgot Your password? <a routerLink="/forgot-password">Click Here!</a></p>-->
+            <div class="not_register color-grey" style="text-align: center;"><a routerLink="../signup">Not registered? Click here</a></div>
+
+					</form>
+				</div>				
+			</div>
+		</div>
+	</div>
+ 
+</div>    

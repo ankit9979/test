@@ -1,0 +1,12 @@
+.header-style-2 .top-header-bar {
+    height: 70px !important;
+}
+
+.logo>img {
+    position: absolute;
+    top: -25px;
+}
+
+.header-bar {
+    padding: 15px 0 !important;
+}

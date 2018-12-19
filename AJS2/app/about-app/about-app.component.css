@@ -1,0 +1,28 @@
+.testi-3 {
+    padding: 45px 0;
+}
+
+.padd-903-bot {
+    padding-bottom: 10px;
+}
+
+.pad-t-b-10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.testimonials {
+    background: #aca3a4 none repeat scroll 0 0;
+}
+
+.min_height {
+    min-height: 310px;
+}
+
+.team-img.img-responsive {
+    filter: grayscale(100%);
+}
+
+.team-entry .image {
+    border-radius: 0 !important;
+}

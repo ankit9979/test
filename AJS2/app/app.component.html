@@ -1,0 +1,188 @@
+<header class="bg-white color-4 header-style-2">
+    <div class="top-header-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-bar">
+                        <a routerLink="/home" class="logo">
+                            <img src="../assets/img/logo.jpg" alt="lets travel">
+                        </a>
+                        <div class="">
+                            <a routerLink="signup" *ngIf="!auth.loggedIn()" class="c-button b-40 bg-1 bg-blue pull-right m-right">
+                                <i class="fa fa-user-plus"></i>
+                                <span>Sign Up</span>
+                            </a>
+                            <a routerLink="login" *ngIf="!auth.loggedIn()" class="c-button b-40 bg-1 bg-blue pull-right m-right">
+                                <i class="fa fa-sign-in"></i>
+                                <span>Sign in</span>
+                            </a>
+                            <a (click)="auth.logout()" *ngIf="auth.loggedIn()" class="c-button b-40 bg-1 bg-blue pull-right m-right">
+                                <i class="fa fa-sign-out"></i>
+                                <span>Log Out</span>
+                            </a>
+
+                            <a *ngIf="itinGuid" routerLink="book-itinerary/{{itinGuid}}" class="c-button b-40 bg-1 bg-blue pull-right m-right">
+                                <i class="fa fa-credit-card"></i>
+                                <span>Checkout</span>
+                            </a>                            
+                            <a routerLink="profile" *ngIf="auth.loggedIn()" class="c-button b-40 bg-1 bg-blue pull-right m-right">
+                                <i class="fa fa-user"></i>
+                                <span>My Profile</span>
+                            </a>                            
+                        </div>
+                        <div class="drop-wrap-wrap">
+                            <!--<div class="drop-wrap">
+                                <div class="drop drop-lg">
+                                    <b><img src="../theme/img/en.png" alt="">English</b>
+                                    <a href="#" class="drop-list"><i class="fa fa-angle-down"></i></a>
+                                    <span class="lg">
+                                    <a href="#"><img src="../theme/img/en.png" alt="">English</a>
+                                    <a href="#"><img src="../theme/img/fr.png" alt="">Français</a>
+                                    <a href="#"><img src="../theme/img/de.png" alt="">Deutsch</a>
+                                    <a href="#"><img src="../theme/img/fr.png" alt="">Italiano</a>
+                                    <a href="#"><img src="../theme/img/ja.png" alt="">日本語</a>
+                                    <a href="#"><img src="../theme/img/ko.png" alt="">한국어</a>				
+                                    </span>
+                                </div>
+                            </div>-->
+                            
+                            <!--<div class="drop-wrap">
+                                <div class="drop">
+                                    <b>ZAR <i class="fa fa-zar"></i></b>
+                                    <a href="#" class="drop-list"><i class="fa fa-angle-down"></i></a>
+                                    <span>
+                                    <a href="#">ZAR <i class="fa fa-zar"></i></a>
+                                    <a href="#">USD <i class="fa fa-usd"></i></a>
+                                    </span>
+                                </div>
+                            </div>-->
+                        </div>
+                        <!--<form action="#" class="form-block">
+                            <div class="input-style-1 b-50 color-3">
+                                <img src="../theme/img/search_icon_small.png" alt="">
+                                <input placeholder="Search..." type="text">
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav">
+                    <div class="nav-menu-icon">
+                        <a href="#"><i></i></a>
+                    </div>
+                    <nav class="menu menu-dr-blue">
+                        <ul>
+                            <li class="type-1" routerLinkActive="active">
+                                <a routerLink="home">Home</a>
+                            </li>
+                            <li class="type-1" routerLinkActive="active">
+                                <a>Luxury Golfing Holidays<span class="fa fa-angle-down"></span></a>
+                                <ul class="dropmenu">
+                                    <li><a routerLink="../../packages/south-africa-and-mauritius-combos">SOUTH AFRICA &amp; MAURITIUS COMBOS</a></li>
+                                    <li><a routerLink="../../packages/ultimate-golf-safaris">ULTIMATE GOLF SAFARIS</a></li>
+                                    <li><a routerLink="../../packages/rovos-rail-golf-adventure">ROVOS RAIL GOLF ADVENTURE</a></li>
+                                    <li><a routerLink="../../packages/african-golf-safari-invitational">AFRICAN GOLF SAFARI INVITATIONAL</a></li>
+                                    <li><a routerLink="../../packages/learn-to-play-golf-in-21-days">LEARN TO PLAY GOLF IN 21 DAYS</a></li>
+                                    <li><a routerLink="../../packages/scheduled-golf-tours">SCHEDULED GOLF TOURS</a></li>
+                                </ul>
+                            </li>
+                            <li class="type-1" routerLinkActive="active">
+                                <a routerLink="destinations">Destinations<span class="fa fa-angle-down"></span></a>
+                                <ul class="dropmenu">
+                                    <li *ngFor="let destination of destinations"><a routerLink="destination/{{destination.seo?.alias}}">{{destination.name}}</a></li>
+                                </ul>
+                            </li>
+                            <li class="type-1" routerLinkActive="active"><a routerLink="packages/specials-and-promotions">Specials and Promotions</a></li>
+                            <li class="type-1" routerLinkActive="active"><a routerLink="articles">Articles</a></li>
+                            <li class="type-1" routerLinkActive="active"><a routerLink="about">About</a></li>
+                            <li class="type-1" routerLinkActive="active"><a routerLink="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer class="bg-dark type-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="footer-block">
+                    <img src="../theme/img/home_2/logo.jpg" alt="" class="logo-footer">
+
+                    <div class="f_text color-grey-7">Golf South Africa offers a diverse portfolio of golf tours to one of the world's most memorable destinations – Southern Africa. Our experienced team arranges every detail of personalized itineraries for groups, couples and single golfers.</div>
+                    <div class="footer-share">
+                        <a target="_blank" href="https://www.facebook.com/Golf-South-Africa-208233966277397/"><span class="fa fa-facebook"></span></a>
+                        <a target="_blank" href="https://twitter.com/golf_south"><span class="fa fa-twitter"></span></a>
+                        <!--<a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-pinterest"></span></a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sm-6 no-padding">
+                <div class="footer-block">
+                    <h6>Latest Packages</h6>
+                    <div *ngFor="let package of packages | slice:0:3">
+                        <div class="f_news clearfix">
+                            <a class="f_news-img black-hover" routerLink="package/{{package.seo?.alias}}">
+                                <img class="img-responsive" [src]="package.imageUrl" alt="" *ngIf="package.imageUrl">
+                                <div class="tour-layer delay-1"></div>
+                            </a>
+                            <div class="f_news-content">
+                                <a class="f_news-tilte color-white link-red" routerLink="package/{{package.seo?.alias}}">{{package.name}}</a>
+                                <span class="date-f">{{package.tagline}}</span>
+                                <a routerLink="package/{{package.seo?.alias}}" class="r-more">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="footer-block">
+                    <h6>Tags:</h6>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/south-africa-and-mauritius-combos">SOUTH AFRICA &amp; MAURITIUS COMBOS</a>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/ultimate-golf-safaris">ULTIMATE GOLF SAFARIS</a>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/rovos-rail-golf-adventure">ROVOS RAIL GOLF ADVENTURE</a>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/african-golf-safari-invitational">AFRICAN GOLF SAFARI INVITATIONAL</a>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/learn-to-play-golf-in-21-days">LEARN TO PLAY GOLF IN 21 DAYS</a>
+                    <a class="tags-b" routerLinkActive="hide" routerLink="../../packages/scheduled-golf-tours">SCHEDULED GOLF TOURS</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="footer-block">
+                    <h6>Contact Info</h6>
+                    <div class="contact-info">
+                        <div class="contact-line color-grey-3"><i class="fa fa-map-marker"></i><span>13 Oakhurst Avenue, Rondebosch, Cape Town</span></div>
+                        <div class="contact-line color-grey-3"><i class="fa fa-phone"></i><a href="tel:+27 72 761 6234">+27 72 761 6234</a></div>
+                        <div class="contact-line color-grey-3"><i class="fa fa-envelope-o"></i><a href="mailto:belinda@golf-southafrica.com">belinda@golf-southafrica.com</a></div>
+                        <!--<div class="contact-line color-grey-3"><i class="fa fa-globe"></i><a href="#">let’s_travel@world.com</a></div>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-link bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <span>&copy; 2016 All rights reserved. Golf South Africa</span>
+                    </div>
+                    <ul>
+                        <li><a class="link-aqua" routerLink="terms-and-conditions">Terms and Conditions </a></li>
+                        <li><a class="link-aqua" routerLink="about">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,133 @@
+<div class="title_header">
+    <h2>Welcome,{{dealer.businessName}}!</h2>
+    <!--<div class="edit_profile" style="color:red;"><a (click)="auth.logout()" style="color:red;">Log Out</a><i class="fa fa-sign-out" aria-hidden="true"></i>
+    </div>-->
+</div>
+<div class="admin col-8">
+
+
+    <div class="detail">
+        <div *ngIf="!IsEdit">
+            <div class="title_info">Company Information
+                <div class="edit_profile"><a (click)="IsEdit = !IsEdit">Edit Profile</a><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="form_group">
+                <div class="left_detail">Business Name Slogan(Optional)</div>
+                <div class="right_detail">{{data?.BusinessName}}</div>
+            </div>
+            <div class="form_group">
+                <div class="left_detail">Business Address</div>
+                <div class="right_detail">{{data?.PhysicalAddress}}</div>
+                <div class="right_detail"><img src="../../assets/images/map.jpg"></div>
+            </div>
+
+            <div class="form_group">
+
+                <div class="left_detail">Telephone</div>
+                <div class="right_detail">{{data?.Telephone}}</div>
+                <div class="left_detail">Alternate Telephone</div>
+                <div class="right_detail">N/A</div>
+            </div>
+            <div class="form_group">
+                <div class="left_detail">Email</div>
+                <div class="right_detail">{{data?.Email}}</div>
+                <div class="left_detail">Alternate Email</div>
+
+                <div class="right_detail">N/A</div>
+            </div>
+            <div class="form_group">
+                <div class="left_detail">ICE URL</div>
+                <div class="right_detail">N/A</div>
+                <div class="left_detail">Website (Optional)</div>
+
+                <div class="right_detail">{{data?.Website}}</div>
+            </div>
+        </div>
+        <div *ngIf="IsEdit">
+            <form (ngSubmit)="updateDealer()">
+                <div class="dealer-form">
+                    <div class="form-group" *ngIf="status">
+                        <label><strong>{{status}}</strong></label>
+                    </div>
+                    <div class="form-group">
+                        <div class="left_detail">Business Name<small>*</small></div>
+                        <div class="right_detail"> <input type="text" class="form-control" required [(ngModel)]="dealer.businessName" name="businessName"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="left_detail">Physical Address<small>*</small></div>
+                        <div class="right_detail"> <textarea class="" required [(ngModel)]="dealer.physicalAddress" name="physicalAddress"></textarea></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="left_detail">Telephone<small>*</small></div>
+                        <div class="right_detail"> <input type="text" class="form-control" required [(ngModel)]="dealer.telephone" name="telephone"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="left_detail">Business Website</div>
+                        <div class="right_detail"> <input type="text" class="form-control" [(ngModel)]="dealer.website" name="website"></div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="clearfix"></div>
+                        <div class="right_detail"> <input type="submit" class="new_buttom" value="Update"></div>
+                        <div class="left_detail"> <input type="button" class="new_buttom" value="Cancel" (click)="IsEdit = !IsEdit"></div>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="detail">
+        <div class="title_info">Change Password
+
+        </div>
+
+        <form role="form" (submit)="updatePassword($event,oldpassword.value, newpassword.value, cpassword.value)">
+            <div class="form">
+                <div class="form-group" *ngIf="status">
+                    <span style="color:red;"><strong>{{status}}</strong></span>
+                </div>
+                <div class="form-group">
+                    <div class="left_detail">Old Password:</div>
+                    <div class="right_detail"> <input type="password" #oldpassword class="form-control" id="oldpassword" placeholder="Old Password" required minlength="6"></div>
+                </div>
+                <div class="form-group">
+                    <div class="left_detail">New Password:</div>
+                    <div class="right_detail"> <input type="password" #newpassword class="form-control" id="newpassword" placeholder="New Password" required minlength="6"></div>
+                </div>
+                <div class="form-group">
+                    <div class="left_detail">Confirm Password:</div>
+                    <div class="right_detail"> <input type="password" #cpassword class="form-control" id="cpassword" placeholder="Confirm Password" required minlength="6"></div>
+                </div>
+                <div class="form-group">
+                    <div class="right_detail"> <input type="submit" style="color:#fff" class="sign_up_btn  " value="Change Password"> </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <br><br>
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+</div>
+<div class="admin col-4">
+    <div class="detail">
+        <div class="title_info">Logs History</div>
+        <div class="description">
+            <div class="form_group">
+                Last Edited <br> Tue, 11 October 2016
+            </div>
+        </div>
+    </div>
+    <br>
+    <img src="../../assets/images/left1.jpg" style="margin-top: 10px"><br>
+    <img src="../../assets/images/left2.jpg">
+
+</div>

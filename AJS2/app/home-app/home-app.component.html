@@ -1,0 +1,763 @@
+<!-- Sliders -->
+<div class="top-baner top-baner_a swiper-animate arrows">
+    <swiper [config]="configSlider" class="swiper-container main-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/slide1.jpg)"></div>
+                </div>
+                <!--<div class="vertical-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title vert-title">
+                                    <div class="top-weather-info delay-1">
+                                        <p>London</p>
+                                        <img src="../../theme/img/weather_icon.png" alt="">
+                                        <span>+30&deg;C</span>
+                                    </div>
+                                    <h1 class="color-white delay-1">amazing santorini<br> 7 days tour</h1>
+                                    <p class="color-white-op delay-2">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi quis leo elementum.</p>
+                                    <a href="list-packages" class="c-button bg-aqua hv-transparent delay-2"><img src="../../theme/img/loc_icon.png" alt=""><span>view our packages</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="swiper-slide">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/slide2.jpg)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/slide3.jpg)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/slide4.jpg)"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/slide5.jpg)"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-arrow-left sw-arrow"><span class="fa fa-angle-left"></span></div>
+        <div class="swiper-arrow-right sw-arrow"><span class="fa fa-angle-right"></span></div>
+    </swiper>    
+
+    <!--<div class="swiper-container main-slider" data-autoplay="5000" data-loop="1" data-speed="900" data-center="0" data-slides-per-view="1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide active" data-val="0">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/P2250160.jpg)">
+                    </div>
+                </div>
+                <div class="vertical-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title vert-title">
+                                    <div class="top-weather-info delay-1">
+                                        <p>London</p>
+                                        <img src="../../theme/img/weather_icon.png" alt="">
+                                        <span>+30&deg;C</span>
+                                    </div>
+                                    <h1 class="color-white delay-1">amazing santorini<br> 7 days tour</h1>
+                                    <p class="color-white-op delay-2">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi quis leo elementum.</p>
+                                    <a href="list-packages" class="c-button bg-aqua hv-transparent delay-2"><img src="../../theme/img/loc_icon.png" alt=""><span>view our packages</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-val="1">
+                <div class="clip">
+                    <div class="bg bg-bg-chrome act" style="background-image:url(assets/img/sliders/P2230040.jpg)">
+                    </div>
+                </div>
+                <div class="vertical-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title vert-title">
+                                    <div class="top-weather-info delay-1">
+                                        <p>London</p>
+                                        <img src="../../theme/img/weather_icon.png" alt="">
+                                        <span>+30&deg;C</span>
+                                    </div>
+                                    <h1 class="color-white delay-1">amazing santorini<br> 7 days tour</h1>
+                                    <p class="color-white-op delay-2">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi quis leo elementum.</p>
+                                    <a href="list-packages" class="c-button bg-aqua delay-2"><img src="../../theme/img/loc_icon.png" alt=""><span>view our packages</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination pagination-hidden poin-style-1"></div>
+    </div>
+    <div class="arrow-wrapp m-200">
+        <div class="cont-1170">
+            <div class="swiper-arrow-left sw-arrow"><span class="fa fa-angle-left"></span></div>
+            <div class="swiper-arrow-right sw-arrow"><span class="fa fa-angle-right"></span></div>
+        </div>
+    </div>-->
+
+    <app-search-app></app-search-app>
+</div>
+<!-- Sliders -->
+
+<div class="main-wraper">
+    <!-- Promo Trips -->
+    <div class="container-fluid">
+        <div class="row col-no-padd">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" *ngFor="let package of packagesPromo;">
+                <div class="photo-block hover-aqua" [style.background-image]="package.imageUrlBg" style="background-position: center;background-size: cover;min-height: 200px;">
+                    <div class="tour-layer delay-1"></div>
+                    <!--<img [src]="package.imageUrl" alt="" *ngIf="package.imageUrl">-->
+                    <div class="vertical-align">
+                        <div class="photo-title">
+                            <h4 class="delay-1"><b>Only <span class="color-aqua">ZAR {{package.displayPrice | number:'.2-2'}}</span></b></h4>
+                            <a class="hover-it" routerLink="../package/{{package.seo?.alias}}">
+                                <h3>{{package.name}}</h3>
+                            </a>
+                            <h5 class="delay-1">{{package.tagline}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Promo Trips -->
+
+    <!-- Top Destinations -->
+    <div class="main-wraper bg-grey-2 padd-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="second-title">
+                        <h4 class="color-dark-2-light">Featured</h4>
+                        <h2>Luxury Golfing Holidays</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-item-grid row">
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">
+                        <div class="radius-top">
+                            <a routerLink="../packages/south-africa-and-mauritius-combos"><img src="../../assets/img/top/P2220422.jpg" alt=""></a>
+                            <!--<div class="tour-weather">South Africa and Mauritius Combos</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/south-africa-and-mauritius-combos" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/south-africa-and-mauritius-combos">South Africa and Mauritius Combos</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">
+                        <div class="radius-top">
+                            <a routerLink="../packages/ultimate-golf-safaris"><img src="../../assets/img/top/P2230017.jpg" alt=""></a>
+                            <!--<div class="tour-weather">Ultimate Golf Safaris</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/ultimate-golf-safaris" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/ultimate-golf-safaris">Ultimate Golf Safaris</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">
+                        <div class="radius-top">
+                            <a routerLink="../packages/rovos-rail-golf-adventure"><img src="../../assets/img/top/P2250249.jpg" alt=""></a>
+                            <!--<div class="tour-weather">Rovos Rail Golf Adventure</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/rovos-rail-golf-adventure" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/rovos-rail-golf-adventure">Rovos Rail Golf Adventure</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">
+                        <div class="radius-top">
+                            <a routerLink="../packages/african-golf-safari-invitational"><img src="../../assets/img/top/P2220154.jpg" alt=""></a>
+                            <!--<div class="tour-weather">African Golf Safari Invitational</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/african-golf-safari-invitational" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/african-golf-safari-invitational">African Golf Safari Invitational</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">
+                        <div class="radius-top">
+                            <a routerLink="../packages/learn-to-play-golf-in-21-days"><img src="../../assets/img/top/P2210017.jpg" alt=""></a>
+                            <!--<div class="tour-weather">Learn to play golf in 21 days</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/learn-to-play-golf-in-21-days" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/learn-to-play-golf-in-21-days">Learn to play golf in 21 days</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-mob-12 col-xs-6 col-sm-6 col-md-4 clear-xs-2 clear-md-3">
+                    <div class="tour-item style-2">  
+                        <div class="radius-top">
+                            <a routerLink="../packages/scheduled-golf-tours"><img src="../../assets/img/top/P2230005.jpg" alt=""></a>
+                            <!--<div class="tour-weather">Scheduled golf tours</div>-->
+                        </div>
+                        <div class="tour-desc bg-white">
+                            <a routerLink="../packages/scheduled-golf-tours" class="c-button bg-green hv-green-o delay-2 small"><span>view more</span></a>
+                            <h4><a class="tour-title color-dark-2 link-green" routerLink="../packages/scheduled-golf-tours">Scheduled golf tours</a></h4>
+                            <!--<div class="tour-text color-grey-3">Nunc cursus libero purus ac cong.</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Destinations -->
+</div>
+
+<!-- Subscribe -->
+<div class="main-wraper inner-banner style-6 padd-903" style="margin-top: 0px;">
+    <!--<img class="center-image" src="../../assets/img/subscribe/bg_1.jpg" alt="">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="second-title">
+                    <h4 class="subtitle color-white underline">be the first to know</h4>
+                    <h2 class="color-white">subscribe to our newsletter</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <form class="subscribe-form" action="#">
+                    <div class="subscribe-input input-style-1 fl low-pad">
+                        <input type="text" required="" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="c-button b-60 bg-red-3 hv-red-3-o fr"><span>subscribe</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Subscribe -->
+
+<!-- Testimonials -->
+<div class="main-wraper bg-grey-2  ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="second-title">
+                    <h4 class="color-dark-2-light">testimonials</h4>
+                    <h2>what our clients say</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="top-baner pad_10 padd-20 arrows">
+                <swiper [config]="configTestimonials" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-val="0" style="max-width: 293px;">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220422.jpg" alt="">
+                                    <div class="tour-weather">Rovos</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Melinda & Sam </a></h4>
+                                    <div class="tour-text color-grey-3">“Not only were we treated royally and terribly spoiled, but we felt we got a sense of the African people, their history and their culture. We went on a golf holiday and got so much more thanks to Golf South Africa”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="1" style="max-width: 293px;">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2230017.jpg" alt="">
+                                    <div class="tour-weather">Adventure</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Sarah & Jake</a></h4>
+                                    <div class="tour-text color-grey-3">“We had no idea that the golf courses would be so outstanding and we fell in love with the South African people. We were told about Pinnacle Point and being higher handicap golfers on first sight it made us weak in
+                                        the knees... But it ended up being the highlight of our golfing holiday and we can't wait to go back.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="2" style="max-width: 293px;">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2250249.jpg" alt="">
+                                    <div class="tour-weather">Safari</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Scott Garrett</a></h4>
+                                    <div class="tour-text color-grey-3">“If you don't have a friend that have travelled to South Africa then Golf South Africa is like the next best thing. We found Belinda so friendly and knowledgeable, that she became almost family the way she took care
+                                        of us and satisfied all our needs.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="4" style="max-width: 293px;">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Emily & Martin</a></h4>
+                                    <div class="tour-text color-grey-3">“Our Golfing holiday was a a life changing experience and we couldn't be happier to have done it. Fantastic golf, wonderful sights, world class food & wine and we learned so much, saw so much, at to much and cant wait
+                                        to go back!”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="swiper-slide" data-val="5">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Nina Greenstall</a></h4>
+                                    <div class="tour-text color-grey-3">“The level of service from Golf South Africa and the expert guidance on putting together the most extraordinary itinerary was all spot on. I left feeling that within a two week time period I experienced more than I
+                                        have in 20 years of travelling.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="6">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Geoff & Janet</a></h4>
+                                    <div class="tour-text color-grey-3">“Golf South Africa nailed every aspect of our trip, immersing us in the sights, sounds and golf that makes South Africa such a wonderful destination...”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="7">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Emily & Martin</a></h4>
+                                    <div class="tour-text color-grey-3">“We brought our two kids, ages 14 and 16, to South Africa to fulfill a long-held dream of theirs to go on safari while we wanted to play golf. We can happily say that Golf South Africa put together the perfect balanced
+                                        itinerary and we all returned home satisfied.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="8">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route </div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Jed Hazell </a></h4>
+                                    <div class="tour-text color-grey-3">“We have worked with many different travel providers over the years and not a single organization has provided the level of support, personalization, and professionalism that Golf South Africa provided. I have no hesitation
+                                        in recommending this outstanding company.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="9">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Nat Bittle</a></h4>
+                                    <div class="tour-text color-grey-3">“Golf South Africa packed our South African golf holiday with hidden secrets, insider experiences, and top notch golf courses--transforming our vacation into a once-in-a-lifetime trip. Superb!”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="10">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Kimberley & Patrick</a></h4>
+                                    <div class="tour-text color-grey-3">“Golf South Africa showed us sides of Southern Africa we would not have discovered on our own. We were recommended to them by friends and we have to say a big thank you...”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="11">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">The “Old Men’s” Golfing Society</a></h4>
+                                    <div class="tour-text color-grey-3">“All documents, vouchers, and transfers were neatly arranged and presented very professionally. Our group of 16 gents all over 55 years normally plans and executes our trips annually but Golf South Africa took the normal
+                                        hassle of planning a long trip off us, making it our best golf tour yet.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="13">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Tom, Mandy and family</a></h4>
+                                    <div class="tour-text color-grey-3">“TI must say our 2 weeks in South Africa has truly been the best experience of our lives thus far! We truly appreciate Golf South Africa for planning that for us and ensuring the whole family was catered for.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="14">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Tom, Mandy and family</a></h4>
+                                    <div class="tour-text color-grey-3">“TI must say our 2 weeks in South Africa has truly been the best experience of our lives thus far! We truly appreciate Golf South Africa for planning that for us and ensuring the whole family was catered for.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="15">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Gary & Bronwyn</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Gary & Bronwyn</a></h4>
+                                    <div class="tour-text color-grey-3">“With our expectations sky high, as they were for this trip, we were expecting disappointment. BUT no, this golf tour exceeded our expectations. All the golf was world class and Golf South Africa’s organization was
+                                        impeccable. Thanks again for your expertise in putting together our golf holiday. We’ll most definitely go to Africa again in the future and when we do we will use Golf South Africa.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="16">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Russell & Jackie</a></h4>
+                                    <div class="tour-text color-grey-3">“Our trip to South Africa was awe-inspiring and life changing. We quickly realize that championship golf courses, fine wine & food, excellent safaris and staying in beautiful accommodations is just a small part of the
+                                        remarkable experience. Golf South Africa provided us with a perfect sampling of everything. Thank you!”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="17">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Happy Hookers Golf Group</a></h4>
+                                    <div class="tour-text color-grey-3">“Belinda’s efforts were beyond the call of duty. She was able to make our trip a true probably the best of our last 10 years. We will be talking about this golf trip, over many beers, for years to come.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="18">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Giles & Rene</a></h4>
+                                    <div class="tour-text color-grey-3">“The trip was fantastic! We loved exploring South Africa, Botswana and Zimbabwe. Although golf was only a small part of our holiday it was still a highlight. Seeing a lion kill across the crocodile river while playing
+                                        on Leopard Creek was something that will remain with us for ever!”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="19">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Melanie Castle</a></h4>
+                                    <div class="tour-text color-grey-3">“I expected to enjoy golf in South Africa, but I did not expect to fall in love with the courses and the people. Thanks Belinda for giving me a life transforming experience”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="20">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Doug & Sally</a></h4>
+                                    <div class="tour-text color-grey-3">“Very enjoyable holiday -Belinda put together a perfectly balanced itinerary and she was extremely responsive and always available. A true professional!”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="21">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Thabiso Madola</a></h4>
+                                    <div class="tour-text color-grey-3">“We could not have asked for anything more n our recent golfing holiday to South Africa. I have travelled and played many of the top courses around the world but this trip to Fancourt and Sabi Sabi was the most exciting,
+                                        spectacular trip I have ever had.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="22">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Susan Mapples</a></h4>
+                                    <div class="tour-text color-grey-3">“Golf South Africa made our travel easy, filled with amazing adventures, world class golf and outstanding memories.”</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-val="24">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Prasenjit Sancur</a></h4>
+                                    <div class="tour-text color-grey-3">““ I cannot thank the team at Golf South Africa enough for arranging a perfect golfing holiday for us. Everything was just right...I have life time memories I will never forget.”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-val="25">
+                            <div class="tour-item style-3">
+                                <div class="radius-top">
+                                    <img src="../../assets/img/testimonial/P2220154.jpg" alt="">
+                                    <div class="tour-weather">Garden Route</div>
+                                </div>
+                                <div class="tour-desc bg-white">
+                                    <div class="rate">
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                        <span class="fa fa-heart color-green"></span>
+                                    </div>
+
+                                    <h4><a class="tour-title color-dark-2 link-green" href="#">Swing Wild Golf Society</a></h4>
+                                    <div class="tour-text color-grey-3">“Fancourt was our fifth trip coordinated through Golf South Africa. This is becoming habit forming! They set the bar very high, and have never failed to exceed our expectations!”</div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination pagination  poin-style-1 pagination-hidden"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-arrow-right offers-arrow color-3"><span class="fa fa-angle-right"></span></div>
+                    <div class="swiper-arrow-left offers-arrow color-3"><span class="fa fa-angle-left"></span></div>
+                </swiper>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonials -->

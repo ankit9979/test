@@ -1,0 +1,48 @@
+.top-baner_a {
+    height: 853px !important;
+}
+.top-baner_a .swiper-container {
+    max-height: 594px;
+}
+
+.pad_10 {
+    padding-top: 10px !important;
+}
+
+.tour-item.style-3 .tour-desc {
+    padding-top: 10px;
+}
+
+.main-title>p {
+    padding-bottom: 0;
+}
+
+.main-title h1 {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.main-slider .swiper-arrow-left, .main-slider .swiper-arrow-right {
+    top: 30%;
+}
+.offers-arrow.swiper-arrow-right { 
+    right: 0px !important;
+}
+.offers-arrow.swiper-arrow-left {
+    left: 0px !important;
+}
+.swiper-slide {
+    margin-right:0px !important;
+}
+
+.bg-bg-chrome {
+    background-size: contain !important;
+    background-position: initial !important;
+}
