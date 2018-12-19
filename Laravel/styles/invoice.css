@@ -1,0 +1,259 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #5D6975;
+    text-decoration: underline;
+}
+.paylslip_logo{
+    width: 230px;
+}
+
+body {
+    position: relative;
+    width: 21cm;  
+    height: 29.7cm; 
+    margin: 0 auto; 
+    color: #001028;
+    background: #fff; 
+    font-family: Arial, sans-serif; 
+    font-size: 12px; 
+    font-family: Arial;
+}
+
+header {
+    padding: 10px 0;  margin-right: 75px;
+    margin-bottom:10px;
+}
+
+#logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#logo img {
+    width: 190px;
+}
+
+h1{ text-align:center; font-size:20px!important; margin-bottom: 0;}
+
+h2 {
+    border-top: 1px solid  #5D6975;
+    border-bottom: 1px solid  #5D6975;
+    color: #5D6975;
+    font-size: 2.4em;
+    line-height: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 20px 0;
+
+}
+
+
+#project span {
+
+    text-align: right;
+    width: 72px;padding: 2px;
+    margin-right: 10px;
+
+
+}
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+table tr:nth-child(2n-1) td {
+    background: #F5F5F5;
+}
+
+table th,
+table td {
+    text-align: center;
+}
+
+table th {
+    padding: 5px 10px;
+    color: #5D6975;   border: 1px solid;
+    border-bottom: 1px solid #C1CED9;
+    font-weight: bolder;   
+
+}
+
+table .service,
+table .desc {
+    text-align: center;
+}
+
+table td {
+    border: 1px solid;
+    padding: 4px;
+    text-align: center;
+}
+
+table td.service,
+table td.desc {
+    vertical-align: top;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+    font-size: 1.2em;
+}
+
+table td.grand {
+    border-top: 1px solid #5D6975;;
+}
+
+#notices .notice {
+    color: #5D6975;
+    font-size: 1.2em;
+}
+
+footer {
+    color: #5D6975;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    /*bottom: 0;*/
+    border-top: 1px solid #C1CED9;
+    padding: 8px 0;
+    text-align: center;
+}
+
+
+.third_hed div{ border:none; float:left; line-height:24px; }
+.second_hed{ float:left;}
+.clear{ clear:both;}
+.first_gead{ line-height:24px; width:30%; float:right;}
+.third_hed{float:left; width:35%;}
+.sub_title_in p {
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    margin:15px 0 20px !important;
+}
+.sub_title_in{ margin:10px 0;}
+
+
+.center_adress_area{ float:left; line-height:24px; margin-top:25px;}
+.center_logo_area{ float:right;}
+.center_adress_area h4{ margin:0!important; font-size:16px!important;}
+.center_adress_area div span{ font-weight:bold;font-size:16px!important;}
+
+.page_conteiner_in h5{ color:#AC1C35; font-size:24px; font-weight:normal; margin:25 0;}
+.subub {
+    clear: both;
+    color: #ac1c35;
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: -17px;
+    width: 100%;
+}
+.first_title{ color:#001028; font-size:30px; font-weight:normal; margin:25 0; border-bottom:1px solid #001028; padding-bottom:10px;}
+.page_conteiner_in{ width:90%;}
+.center_part{ width:90%;}
+p{ line-height:21px;}
+ul li{ line-height:21px;}
+
+.table_title {
+    border: 1px solid;
+    padding: 15px 0;
+    text-align: center;
+    width: 89.8%;
+}
+
+
+.header_inner table{ 
+    border-collapse: inherit!important;
+    border-spacing: inherit!important;
+    margin-bottom: auto!important;
+    width: auto!important;
+}
+.header_inner table td {
+    border:none;
+    line-height: 24px;
+    padding:0;
+    text-align: left;
+}
+.header_inner table tr:nth-child(2n-1) td{ background:none;}
+
+.left_head_table{ float:left;}
+.right_table{ float:right;}
+.center_table{ float:left; margin:0 0 0;}
+
+
+
+.center_left_table{ float:left;}
+.center_right_table{ float:right;}
+.center_part table{ 
+    border-collapse: inherit!important;
+    border-spacing: inherit!important;
+    margin-bottom: auto!important;
+    width: auto!important;
+}
+.center_part table td {
+    border:none;
+    line-height: 24px;
+    padding:0;
+    text-align: left;
+}
+.center_part table tr:nth-child(2n-1) td{ background:none;}
+.center_left_div{ float:left; width:200px;margin-top:20px;}
+.center_left_div span{ font-weight:bold; }
+
+
+
+.main_first_td{ width:30% !important; float: left;}
+.main_second_td{ width:30% !important; float: left; margin: 0 0 0 30px;}
+.main_third_td{ width:30% !important; float:right;}
+.main_table{ width:100% !important; display: block;}
+.main_table > tbody{ width:100% !important; display: block;}
+.main_table tr{ width:100% !important; display: block;}
+.header_inner td {
+    width: 35%;
+}
+
+/*Div structure*/
+.headRow{
+    display:table-row;
+}
+.divTable{
+    display:table;         
+    width:auto;         
+
+    /*     border-collapse: collapse;*/
+
+}
+.divRow{
+    display:table-row;
+    width:auto;
+    clear:both;
+
+}
+.font_d{
+    border: 1px solid;
+    color: #5d6975;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+.divCell{
+    border-left: 1px solid;
+    border-top: 1px solid;
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+}
+.b_last{
+    border-right: 1px solid;
+}
