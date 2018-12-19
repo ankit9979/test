@@ -1,0 +1,157 @@
+/*
+Theme Name: APT
+Theme URI: #
+Author: APT
+Author URI: APT
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: APT
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.sidebar li { float: left;list-style: outside none none; margin-bottom: 10px;}
+.right_img img { float: right; padding-left: 10px;  padding-top: 10px;}
+.left_img img {  float: left; padding-right: 10px; padding-top: 10px;}
+.page_title_h { color: #fff; font-size: 24px; line-height: 0;}
+.inner_page h1 { background-color: #4E4C4D;  font-size: 24px;  line-height: 49px;text-transform: capitalize; color: #fff; border-radius: 2px;  width: 100%;
+    padding: 2px 0 0 15px; margin-bottom: 30px;}
+.img_left img { float: none;  margin-left: 4%;}
+.rapid_prototype img { margin-left: 3%; float: right; width: 45%;}
+.fl_right {  float: right;  padding-bottom: 5px;}
+.header_img img { margin-top: -10px;}
+.fl_right.vvb {  left: 17px; position: relative;}
+.inner_page {  margin-top: -10px;}
+.green_right_area iframe { height: 237px;margin-top: 20px;width: 94%;}
+.image_width img {
+
+}.post_head {  background: #f1f1f1 none repeat scroll 0 0;color: #f29f05; font-family: sans-serif; font-size: 18px; font-weight: 500;  height: 43px; line-height: 40px; padding-left: 20px; padding-right: 0;
+    width: 98%; }
+.staff_data strong {  font-family: helvetica;  font-style: italic;  font-weight: bold;}
+.fl_width_img img,.center_manager img {    width: 100%;}
+.industrial_collabar_content { width: 98%;   margin-bottom: 5px;}
+#post-82 .analytical{ margin-bottom: 30px;}
+#post-82 .fl_right { margin-bottom: 30px;}
+.inner_page h2 { background: #f1f1f1 none repeat scroll 0 0; color: #f29f05;  font-family: sans-serif; text-transform: capitalize; font-size: 18px;
+    font-weight: 500;  height: 43px; line-height: 44px; margin-bottom: 7px; padding-left: 20px; padding-right: 0;  clear: both; width:100%;}
+.inner_page h3 {    margin-top: 0; background: #f1f1f1 none repeat scroll 0 0;color: #f29f05; text-transform: capitalize; font-family: sans-serif;  font-size: 18px; font-weight: 500;
+    height: 43px; line-height: 40px; padding-left: 20px;  padding-right: 0;}
+.margin_btm {  margin-bottom: 15px;}
+.wpb_wrapper > p {  width: 98%;}
+.brownpointer {  margin-left: 30px;}
+.staff_data img {  max-width: 99%; width: auto;}
+.header_img img{   width: 100%;}
+.header_img {top: -49px;position: relative;  background: rgba(0, 0, 0, 0) url("images/innerbanner.jpg") no-repeat scroll center center;  height: 200px; width: 100%;}
+.header_img h3 { color: #fff;}
+.h3_detail { color: #fff;font-weight: 300;}
+.fb_frme a {  color: #0088cc;}
+.header_img .overlay { padding: 60px 0 50px;}
+.apt_solution { position: relative; top: 10px; width: 41%;}
+.content-wrap { position: relative; top: -29px;}
+
+.col-sm-7  ul li  {background: rgba(0, 0, 0, 0) url("images/menuanchorbg.png") no-repeat scroll left center;display: block;font-family: Arial;font-size: 14px;padding-left: 21px;text-decoration: none;
+}
+.management_governance img{width:100%;}
+.inner_page { margin-bottom: 18px;}
+.researcher_data { float: left; width: 82%;  margin-bottom: 30px !important;}
+.researcher_staff_bg {  clear: both; float: left; width: 150px; margin-bottom: 30px;}
+.researcher_staff_bg img { width: 140px;  border: 1px solid #f29f05;}
+.affilate_institute img { float: right;  width: 150px;}
+.staff_data .label { color: #474747; float: left; margin-bottom: 18px; font-size: 14px; font-weight: bold; height: 11px; text-align: left;width: 145px;}
+.academicstaff {  margin-top: 30px !important;}
+.infohuge { clear: both; margin-left: 145px;  width: 100%;}
+.analyticalul > li { margin-left: 10px;}
+.staff_data .info { color: #474747;  height: 18px;    margin-bottom: 14px; line-height: 18px;width: 370px;}
+.staff_data { float: left; clear: both;}
+.img_fl_left_padding img { float: left; padding: 0 12px 12px 3px;}
+.left_footer ul .current-menu-item a { color: #f29e0a !important;}
+.industry_partner a { float: left; height: 100px;  margin-bottom: 0;  margin-right: 24px;  margin-top: 16px; width: auto;}
+.ind_collobration img { height: 84px; padding: 4px;}
+.fet_img { float: right;}
+.innerpage_menu { background: #474747 none repeat scroll 0 0; display: inline-block; margin-bottom: 20px;  min-height: 75px;   width: 100%;}
+.innerpage_menu .menulinks { display: inline-block; margin: 3px;}
+.innerpage_menu .page_menu { display: inline-block; list-style: outside none none;margin-left: 10px;}
+.form_in .wpcf7-not-valid-tip {  color: #fff !important;}
+.analytical {  width: 100% !important;}
+.innerpage_menu .page_menu li {
+    background: #5b5b5b none repeat scroll 0 0;
+    float: left; height: 22px; line-height: 22px; margin-bottom: 1px; margin-right: 1px; padding-left: 5px; width: 426px;}
+.innerpage_menu .menutitle { color: #fea300;font-family: "VAGRoundedLTCom-Light";
+    font-size: 16px;  height: 37px;line-height: 37px; padding-left: 18px; text-transform: capitalize;}
+.innerpage_menu .page_menu li a { background: rgba(0, 0, 0, 0) url("images/menuanchorbg.png") no-repeat scroll left center;
+    color: #fff;  display: block; font-family: Arial; font-size: 12px;  padding-left: 21px; text-decoration: none;}
+.innerpage_menu .page_menu li:hover { background: #ff9100 none repeat scroll 0 0;}
+.innerpage_menu .page_menu li a:hover {  background: rgba(0, 0, 0, 0) url("images/menu_anchor_hover_bg.png") no-repeat scroll left center;}
+.pp_social { display: none !important;}
+.image_width img { width: 100%;}
+.min_margin { margin-top: -28px;}
+.thumn_news img {border: 1px solid #f29f05;height: 100% !important;width: 100% !important;}
+.hr_line_news {    clear: both;    color: #bbbbbb;}
+.news_title_a { margin-bottom: 28px;}
+.staff_data { margin-bottom: 30px; width: 80% !important;}
+.col-md-3.col-xs-6.thumn_news {    margin-bottom: 20px;}
+.wpb_wrapper ul li {    margin-left: 10px;}
+.heading_class {  margin-bottom: 30px !important;}
+.read_full_story {  background: rgba(0, 0, 0, 0) url("images/read_full_story.jpg") no-repeat scroll left center;
+    display: block; height: 34px; margin-top: 10px; width: 210px; text-indent: -9999px;}
+.aiwidgetscss {  border: 1px solid #ccc;  height: 550px;   overflow-y: scroll;}
+.aiwidgetscss .widget-title { background-color: #f7f7f7; border-radius: 2px;  text-shadow: 1px 1px #ccc;   margin: 0 0 10px; padding: 25px 0 25px 14px;}
+.fl { margin-top: 30px;}
+
+.form_right{   height: 409px;  background: rgba(0, 0, 0, 0) url("images/form_bg.jpg") no-repeat scroll center center / 100% 100%; float: left;   width: 45%;}
+.form_left { background-color: #4e4c4d;float: left; height: 409px;   width: 55%;  }
+.form_in lable {  font-weight: 500;  float: left;width: 66px;color: #fff;}
+.form_in input { width: 100%;}
+.form_in textarea {height: 86px; width: 314px;}
+.form_inner { padding: 48px 9px 2px 46px;}
+.contact_us_t { clear: both; margin-top: 30px; position: relative;}
+.form_put {  float: left; margin-bottom: 22px; width: 315px;}
+.send_me { background-color: #f29f05;  border: medium none; font-size: 16px;color: #fff; font-weight: 800; left: 66px; padding: 5px; position: relative; letter-spacing: 1px; width: 150px !important;}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors { clear: both;}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {color: #fff;}
+
+.wpcf7-not-valid-tip { position: absolute;}
+#post-31 .staff_data,#post-32 .staff_data { margin-top: 22px;}
+#post-44 .staff_data{ margin-top: 22px;}
+#post-71 .analytical,#post-71 .analyticalul { margin-bottom: 30px;}
+.right_footer .wpcf7-not-valid-tip { position: relative;}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {clear: both;  color: #fff;}
+
+.imgdisplay { margin-left: 15px;}
+.fb_frme { border: 1px solid #ccc; width: 91%;}
+.news_input {width: 88%;}
+.header-text {text-shadow: 1px 1px #ccc;}
+
+.tweettext a, .widget .tweettext a { color: #0088cc !important;}
+.facebbok_area { padding: 100px 0;}
+.fb_frme .fa.fa-facebook { display: none;}
+.cff-likebox.cff-top.cff-outside {margin: 0 !important;}
+.cff-header {line-height: 67px !important; margin: 0 !important; padding: 0 0 0 15px !important;}
+.news_input .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors { color: red;}
+.contact_us_t .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok { width: 90%;text-align: center;}
+.aiwidget-title {display: none;}
+.col-md-8.col-xs-6.news_contes {margin-bottom: 10px;}
+.vvvf {float: left;margin-right: 21px;padding-bottom: 9px;}
+.contactapt_link {
+    background: rgba(0, 0, 0, 0) url("./images/contact_aptbtn.jpg") no-repeat scroll 0 0;
+    display: block;height: 57px;margin-top: 37px;text-decoration: none;width: 230px;}
+.sub_footer img {
+    margin: 0 18px 0 19px;
+}
+.green_left_area > ul {
+    clear: both;
+    color: #fff;
+    float: none;
+    margin-left: 50px;
+}
+.contact_us_t .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+   border: 2px solid #f29f05 !important; 
+}
+
+.contact_us_t .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
+    border: 2px solid #f29f05 !important; 
+}
