@@ -1,0 +1,72 @@
+<ul *ngFor="let employee of employees">
+	<li (click)="getEdit(employee)">{{employee.name}}|{{employee.address}}</li><li (click)="delete(employee)">Delete</li>
+</ul>
+
+<div *ngIf="!employe">
+
+	<h3>Addd</h3>
+	<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+
+		<input type="text" formControlName="name"  [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+		<div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+			<div *ngIf="f.name.errors.required">  Name is required</div>
+		</div>
+
+
+		<input type="text" formControlName="address"  [ngClass]="{ 'is-invalid': submitted && f.address.errors }">
+		<div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+			<div *ngIf="f.address.errors.required">  address is required</div>
+		</div>
+
+
+		<input type="text" formControlName="salary"  [ngClass]="{ 'is-invalid': submitted && f.salary.errors }">
+		<div *ngIf="submitted && f.salary.errors" class="invalid-feedback">
+			<div *ngIf="f.salary.errors.required">  address is required</div>
+		</div> 
+
+		<input type="submit" > 
+	</form>
+
+</div>
+
+<div *ngIf="employe">
+
+	<form [formGroup]="registerForm2" (ngSubmit)="onUpdate()">
+
+
+		<input type="text" formControlName="name"  [ngClass]="{ 'is-invalid': submitted && fs.name.errors }" [(ngModel)]="employe.name">
+		<div *ngIf="submitted && fs.name.errors" class="invalid-feedback">
+			<div *ngIf="fs.name.errors.required">  Name is required</div>
+		</div>
+
+
+		<input type="text" formControlName="address"  [ngClass]="{ 'is-invalid': submitted && fs.address.errors }" [(ngModel)]="employe.address">
+		<div *ngIf="submitted && fs.address.errors" class="invalid-feedback">
+			<div *ngIf="fs.address.errors.required">  address is required</div>
+		</div>
+		<input type="hidden" formControlName="id" [(ngModel)]="employe.id">
+
+		<input type="text" formControlName="salary"  [ngClass]="{ 'is-invalid': submitted && fs.salary.errors }" [(ngModel)]="employe.salary">
+		<div *ngIf="submitted && fs.salary.errors" class="invalid-feedback">
+			<div *ngIf="fs.salary.errors.required">  address is required</div>
+		</div> 
+
+		<input type="submit" name=""> 
+	</form>
+
+</div>
+<div class="card mt-5" style="margin:auto;width: 600px;">
+  <div class="card-body">
+    <h5 class="card-title">Login</h5>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" placeholder="Email Address" [(ngModel)]="email">
+    </div>
+    <div class="form-group">
+      <label for="email">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="tryLogin()">Login</button>
+  </div>
+</div>

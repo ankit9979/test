@@ -1,0 +1,9 @@
+<ul *ngFor='let category of categoriess'>
+<li (click)='onSelect(category)'>{{category.name}}</li>	
+</ul>
+
+
+
+
+
+<app-category-detail [category]='category'></app-category-detail>
