@@ -23,16 +23,6 @@ $(document).ready(function () {
 //    }
 
 
-if ("http://localhost" == window.location.origin) {
-    var site_url = "http://localhost/tpt/";
-} else if ("http://turningpointtutors.co.za" == window.location.origin)
-{
-    var site_url = window.location.origin + "/test/";
-} else {
-  var site_url = window.location.origin + "/";
-
-
-}
 
 
 
